@@ -1,0 +1,248 @@
+/* Couleurs */
+:root {
+  --orange: #ff8c00;
+  --blue: #0077b6;
+  --white: #ffffff;
+  --gray-dark: #333333;
+  --green-light: #50c878;
+}
+
+/* En-tête */
+.header-top,
+.header-bottom {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.logo h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--orange);
+}
+
+.header-top .btn-orange,
+.header-bottom .btn-orange {
+  background-color: var(--orange);
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border: none;
+}
+
+.header-top .btn-orange:hover,
+.header-bottom .btn-orange:hover {
+  background-color: #e67e00; /* Une nuance plus foncée pour le hover */
+}
+
+/* Icônes */
+.fas {
+  font-size: 18px;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  background-color: var(--blue);
+  border: none;
+}
+
+.dropdown-item {
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.dropdown-item:hover {
+  background-color: var(--orange);
+}
+
+/* Bannière principale */
+.hero-section {
+  background: url("../images/banner.webp") no-repeat center center/cover;
+  padding: 100px 0;
+  color: var(--white);
+}
+
+.hero-section h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-section button {
+  color: #ff8c00;
+  font-size: 30px;
+}
+
+.hero-section p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Section Catégories de services */
+.categories-section .card {
+  transition: transform 0.3s;
+}
+
+.categories-section .card:hover {
+  transform: scale(1.05);
+}
+
+/* Section À Propos */
+.about-section {
+  background-color: var(--white);
+  padding: 80px 0;
+}
+
+.about-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--blue);
+  margin-bottom: 40px;
+}
+
+.about-section h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.about-section p, .about-section ul {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--gray-dark);
+  line-height: 1.6;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-section ul li {
+  margin-bottom: 10px;
+}
+
+.about-section ul li::before {
+  content: "✔️";
+  margin-right: 10px;
+}
+
+/* Vidéo de présentation */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Ratio 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Témoignages */
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial {
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--gray-dark);
+  margin-bottom: 10px;
+}
+
+.testimonial p:last-child {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--orange);
+  margin-bottom: 0;
+}
+
+/* Section Services Populaires */
+.popular-services-section .card {
+  background-color: var(--white);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.popular-services-section h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+/* Pied de page */
+footer {
+  background-color: var(--gray-dark);
+  color: var(--white);
+}
+
+footer h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+footer p,
+footer a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+footer a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Médias Queries pour les petits écrans */
+@media (max-width: 768px) {
+  .hero-section h2 {
+    font-size: 32px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+  }
+
+  .categories-section .card {
+    margin-bottom: 20px;
+  }
+
+  .about-section h3,
+  .about-section h4 {
+    font-size: 24px;
+  }
+
+  .popular-services-section h3 {
+    font-size: 24px;
+  }
+}
